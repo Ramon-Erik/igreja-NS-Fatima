@@ -12,7 +12,7 @@ function mostrarOpc() {
         linha1.classList.add('rodar-negativo')
         linha2.style.display = 'none'
         linha3.classList.add('rodar')
-        nav.style.display = 'block'
+        nav.style.display = 'flex'
     } else {
         nav.style.display = 'none'
         linha1.classList.remove('rodar-negativo')

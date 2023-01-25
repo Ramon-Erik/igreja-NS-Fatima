@@ -34,23 +34,11 @@ header {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     color: #8EC3FF;
     transition: 0.4;
     z-index: 3;
-}
-
-header ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-header a {
-    font-size: 1.3em;
-    color:gray;
-    text-decoration: none;
 }
 
 .menu {
@@ -73,7 +61,6 @@ header a {
     transform: rotate(47deg);
     top: 10px;
     right: 5px;
-    background-color: red;
 }
 .menu .rodar-negativo {
     position: absolute;
@@ -86,26 +73,27 @@ nav {
     display: none;
     position: absolute;
     top: 90%;
-    right: 16px;
-    text-align: center;
-    width: 32vw;
+    right: 3px;
+    background-color: #dbdbdb;
+    color: rgb(29, 29, 29);
+    width: 37vw;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
 }
 
 nav li {
+    text-align: center;
     padding: 10px;
-    font-size: 1.1em;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
 }
 
-nav a{
-    font-weight: bold;
-    letter-spacing: .04em;
-    color:white; 
-    transition: .3s;
-}
-
-nav a:hover, nav a:focus{
-    color: gray; 
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
 }
 
 .tela {
@@ -204,13 +192,13 @@ main {
 }
 
 #fund-cord .linhaE {
-    right: 10%;
+    right: 7%;
     animation-name: aparecerR;
     animation-duration: 1.2s;
 }
 
 #fund-cord .linhaD {
-    left: 10%;
+    left: 7%;
     animation-name: aparecerL;
     animation-duration: 1.2s;
 }
@@ -252,6 +240,29 @@ main {
     width: 140px;
     height: 150px;
     background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {display: none;}
+    nav {
+        display: flex;
+        position: relative;
+        width: fit-content;
+        font-size: 1.1em;
+        background-color: transparent;
+    }
+    nav ul, nav li {display: flex; border: none; gap: 20px;}
+    
+    nav a {
+        color: #c4c4c4;
+    }
+    
+    nav a:hover, nav a:focus {
+        padding: 5px;
+        color: white;
+        background-color: #9c9c9c;
+        border-radius: 8px;
+    }
 }
 
 @media screen and (min-width: 968px) {
