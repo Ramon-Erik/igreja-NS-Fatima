@@ -99,6 +99,7 @@ nav a {
 .tela {
     max-width: 100vw;
     padding-top: 80px;
+    border-bottom: 10px solid white;
     z-index: 1;
 }
 
@@ -107,7 +108,7 @@ nav a {
 }
 
 main {
-    background-image: linear-gradient(to bottom, white, #0077ff, #0051ff);
+    background-image: linear-gradient(to bottom, white, #2289ff, #0077ff, #0051ff);
 }
 
 #home {
@@ -142,12 +143,18 @@ main {
     animation-duration: 1.5s;
 }
 
-#fundacao {
+#fundacao, #fundadores {
     min-height: 100vh;
     margin-top: 30px;
 }
 
-#fundacao .conteudo {
+#fundacao p, #fundadores p {
+    width: 85%;
+    text-align: justify;
+    padding: 15px;
+}
+
+#fundacao .conteudo, #fundadores .conteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,14 +163,8 @@ main {
     color: white;
 }
 
-#fundacao p {
-    width: 85%;
-    text-align: justify;
-    padding: 15px;
-}
-
-/* fundadores e coordenadors */
-#fund-cord .conteudo {
+/* coordenadors */
+#coordenadores .conteudo {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -173,69 +174,70 @@ main {
     color: white;
 }
 
-#fund-cord #tronco {
+#coordenadores #tronco {
     margin-top: 40px;
     height: 1000px;
     width: 5px;
     background-color: white;
 }
 
-#fund-cord p{
+#coordenadores p{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     transform: translateX(-50%);
     width: 45px;
     height: 45px;
+    border-radius: 50%;
     background-color: white;
     color: black;
 }
 
-#fund-cord .linhaE {
+#coordenadores .linhaE {
     right: 7%;
     animation-name: aparecerR;
     animation-duration: 1.2s;
 }
 
-#fund-cord .linhaD {
+#coordenadores .linhaD {
     left: 7%;
     animation-name: aparecerL;
     animation-duration: 1.2s;
 }
 
-#fund-cord .linha1 {
+#coordenadores .linha1 {
     top: 15%;
 }
-#fund-cord .linha1 p {
+#coordenadores .linha1 p {
     position: absolute;
     top: 15%;
 }
 
-#fund-cord .linha2 {
+#coordenadores .linha2 {
     top: 35%;
 }
-#fund-cord .linha2 p {
+#coordenadores .linha2 p {
     position: absolute;
     top: 35%;
 }
 
-#fund-cord .linha3 {
+#coordenadores .linha3 {
     top: 55%;
 }
-#fund-cord .linha3 p {
+#coordenadores .linha3 p {
     position: absolute;
     top: 55%;
 }
-#fund-cord .linha4 {
+#coordenadores .linha4 {
     top: 75%;
 }
-#fund-cord .linha4 p {
+#coordenadores .linha4 p {
     position: absolute;
     top: 75%;
 }
 
 
-#fund-cord .foto {
+#coordenadores .foto {
     position: absolute;
     width: 140px;
     height: 150px;
@@ -265,21 +267,29 @@ main {
     }
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+footer a {color: #9e9e9e; text-decoration: none;} 
+footer a:hover {color: #5a5a5a; text-decoration: underline;} 
+
 @media screen and (min-width: 968px) {
-    #fund-cord .linhaE {
+    #coordenadores .linhaE {
         right: 20%;
     }
     
-    #fund-cord .linhaD {
+    #coordenadores .linhaD {
         left: 20%;
     }    
 }
 @media screen and (min-width: 1068px) {
-    #fund-cord .linhaE {
+    #coordenadores .linhaE {
         right: 30%;
     }
     
-    #fund-cord .linhaD {
+    #coordenadores .linhaD {
         left: 30%;
     }    
 }
