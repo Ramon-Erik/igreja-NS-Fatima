@@ -22,7 +22,7 @@ function mostrarOpc() {
 }
 
 function mudarTamanho() {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 968) {
         nav.style.display = 'flex'
     } else {
         nav.style.display = 'none'
