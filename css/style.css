@@ -188,7 +188,7 @@ main {
 }
 
 #coordenadores .linha {
-    transform: translateX(-50%);
+    transform: translateX(-49%);
     display: flex;
     align-items: center;
     justify-content: space-between;
