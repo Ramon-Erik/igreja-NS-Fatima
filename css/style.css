@@ -167,37 +167,49 @@ main {
 }
 
 /* coordenadors */
+#coordenadores {
+    padding-bottom: 40px;
+}
 #coordenadores .conteudo {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
     font-size: 1.2em;
-    line-height: 1.3em;
     color: white;
 }
 
 #coordenadores #tronco {
     position: relative;
     margin-top: 40px;
-    height: 1000px;
+    height: fit-content;
     width: 5px;
     background-color: white;
 }
 
 #coordenadores .linha {
-    transform: translateX(-43%);
+    transform: translateX(-47%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
-    /* background-color: #9c9c9c; */
+    gap: 20px;
+    margin-bottom: 75px;
+    width: fit-content;
 }
 
 #coordenadores .nome {
     width: 100px;
     text-align: center;
+}
+
+.linha:hover .nome {
+    padding: 5px;
+    transform: rotateY(360deg);
+    border-radius: 9px;
+    box-shadow: 0px 0px 9px 7px #00000028;
+    background-color: white;
+    color: gray;
+    transition: all 0.6s ease;
 }
 
 #coordenadores .ano {
@@ -209,12 +221,14 @@ main {
     border-radius: 50%;
     background-color: white;
     color: gray;
+    
 }
 
 #coordenadores .foto {
     width: 140px;
     height: 150px;
     background-color: white;
+    box-shadow: 0px 0px 13px 5px #00000028;
 }
 
 /* movimentos */
@@ -284,8 +298,12 @@ footer {
     font-weight: bold;
     color: #5a5a5a;
 }
-footer a {color: #9e9e9e; text-decoration: none;} 
-footer a:hover {color: #2e2e2e; text-decoration: underline;} 
+footer a {
+    color: #9e9e9e; 
+    text-decoration: none;
+} 
+footer a:hover {
+    color: #2e2e2e; text-decoration: underline;} 
 
 @media screen and (min-width: 968px) {
     .menu {display: none;}
@@ -312,5 +330,16 @@ footer a:hover {color: #2e2e2e; text-decoration: underline;}
     }
     header h1{
         text-align: center;
+    }
+
+    #coordenadores .linha {
+        transform: translate(-48%);
+        gap: 30px;
+        width: 500px;
+    }
+    #coordenadores .linha.direita {
+        transform: translate(-51%);
+        gap: 30px;
+        width: 500px;
     }
 }
