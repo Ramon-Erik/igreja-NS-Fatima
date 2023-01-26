@@ -26,6 +26,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth !important;
 }
 
 header {
@@ -178,70 +179,39 @@ main {
 }
 
 #coordenadores #tronco {
+    position: relative;
     margin-top: 40px;
     height: 1000px;
     width: 5px;
     background-color: white;
 }
 
-#coordenadores p{
+#coordenadores .linha {
+    transform: translateX(-43%);
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    transform: translateX(-50%);
-    width: 45px;
-    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    /* background-color: #9c9c9c; */
+}
+
+#coordenadores .nome {
+    width: 100px;
+    text-align: center;
+}
+
+#coordenadores .ano {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: white;
-    color: black;
+    color: gray;
 }
-
-#coordenadores .linhaE {
-    right: 7%;
-    animation-name: aparecerR;
-    animation-duration: 1.2s;
-}
-
-#coordenadores .linhaD {
-    left: 7%;
-    animation-name: aparecerL;
-    animation-duration: 1.2s;
-}
-
-#coordenadores .linha1 {
-    top: 15%;
-}
-#coordenadores .linha1 p {
-    position: absolute;
-    top: 15%;
-}
-
-#coordenadores .linha2 {
-    top: 35%;
-}
-#coordenadores .linha2 p {
-    position: absolute;
-    top: 35%;
-}
-
-#coordenadores .linha3 {
-    top: 55%;
-}
-#coordenadores .linha3 p {
-    position: absolute;
-    top: 55%;
-}
-#coordenadores .linha4 {
-    top: 75%;
-}
-#coordenadores .linha4 p {
-    position: absolute;
-    top: 75%;
-}
-
 
 #coordenadores .foto {
-    position: absolute;
     width: 140px;
     height: 150px;
     background-color: white;
@@ -343,21 +313,4 @@ footer a:hover {color: #2e2e2e; text-decoration: underline;}
     header h1{
         text-align: center;
     }
-
-    #coordenadores .linhaE {
-        right: 20%;
-    }
-    
-    #coordenadores .linhaD {
-        left: 20%;
-    }    
-}
-@media screen and (min-width: 1068px) {
-    #coordenadores .linhaE {
-        right: 30%;
-    }
-    
-    #coordenadores .linhaD {
-        left: 30%;
-    }    
 }
