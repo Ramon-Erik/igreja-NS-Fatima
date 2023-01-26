@@ -109,7 +109,7 @@ nav a {
 }
 
 main {
-    background-image: linear-gradient(to bottom, white, #2289ff, #0077ff, #0051ff);
+    background-image: linear-gradient(to bottom, #94c6ff, #4398f8, #3b79ff);
 }
 
 #home {
@@ -139,7 +139,7 @@ main {
     width: 250px;
     font-size: 2em;
     text-align: center;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 3px black;
     color: white;
     animation-name: aparecerR;
     animation-duration: 2s;
@@ -262,7 +262,7 @@ main {
     padding: 40px;
 }
 
-#movimentos h2 {text-align: center;}
+#movimentos h2 {text-align: center; padding: 10px;}
 
 #movimentos p {
     height: 180px;
